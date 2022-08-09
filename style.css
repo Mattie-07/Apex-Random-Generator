@@ -1,0 +1,181 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+    background:#37123C;
+}
+
+.container{
+    display:flex;
+    flex-direction:column;
+}
+
+.headerText{
+    color:#A99F96;
+    font-size:3rem;
+    width:100vw;
+    margin-top:6rem;
+    margin-left:73px;
+}
+div.legend{
+    font-family: 'Raleway', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    min-width: 220px;
+    max-width: 310px;
+    max-height: 945px;
+    width: 100%;
+    background: #000000;
+    color: #ffffff;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+div.legend *{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.legend{
+    border:1px solid #DDA77B;
+    border-radius: 10px;
+    margin:5rem;
+    height:945px;
+}
+div.legend img{
+    max-width: 100%;
+    position: relative;
+    opacity: 0.4;
+}
+
+
+div.legend .legendOne{
+    position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+}
+
+div.legend h2 {
+    position: absolute;
+    left: 40px;
+    right: 40px;
+    display: inline-block;
+    background: #000000;
+    transform: skew(-10deg) rotate(-10deg) translate(0, -50%);
+    padding: 12px 5px;
+    margin: 0;
+    top: 50%;
+    text-transform: uppercase;
+    font-weight: 400;
+    }
+    
+div.legendOne h2 span{
+    font-weight:800;
+}
+
+div.legend:before{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    content: '';
+    background: #ffffff;
+    position: absolute;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-transform: rotate(110deg) translateY(-50%);
+    transform: rotate(110deg) translateY(-50%);
+    }
+
+div.legend.blue{
+    background-color: #123851;
+}
+
+
+div.legend:hover img{
+    opacity:1;
+    transform: scale(1.1);
+}
+div.legend:hover:before,
+div.legend.hover:before{
+    -webkit-transform: rotate(110deg) translateY(-150%);
+    transform: rotate(110deg) translateY(-150%);
+}
+div.legend:hover h2,
+div.legend.hover h2{
+    -webkit-transform: skew(-10deg) rotate(-10deg) translate(-150%, -50%);
+    transform: skew(-10deg) rotate(-10deg) translate(-150%, -50%);
+}
+
+#legend1, #legend2, #legend3, #legend4{
+    height:775px;
+    width:100%;
+    object-fit: cover;
+    transition:.5s ease;
+}
+
+
+/* #legend1:hover, #legend2:hover, #legend3:hover, #legend4:hover{
+    opacity:.3;
+
+} */
+.legend img{
+    height:200px;
+    border-radius:10px 10px 0px 0px;
+}
+
+.legend h2{
+    color:#37123C;
+    margin-top:8px;
+    margin-left:25px;
+    display:inline;
+}
+.apexGrid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    grid-template-rows:auto;
+    height:100vh;
+}
+
+.legendInfo{
+    flex-direction:row;
+    margin-top:2rem;
+    padding-left:1rem;
+    padding-top:20px;
+    background-color:#71677C;
+    border-radius:10px 0px 10px 10px;
+    transition:all .5s;
+    padding-bottom:1rem;
+}
+
+.legendInfo:hover{
+    background-color: white;
+    margin-top:0rem;
+    padding-bottom:8rem;
+
+}
+
+.legendInfo img{
+    height:42px;
+    border-radius:10px;
+}
+
+.legendInfo:hover img{
+    display: none;
+}
+
+.legendInfo p{
+    display:block;
+}
+
+/* {
+    0% { opacity: 0; filter: brightness(1) blur(20px) }
+    10% { opacity: 1; filter: brightness(2) blur(10px) }
+    100% { opacity: 1; filter: brightness(1) blur(0) }
+  } */
