@@ -1,1 +1,4 @@
 So I was able to put the legends inside of an array. The next move would be to create a button so the customer has the opportunity to have one of these legends picked from that selection. Then once I have that logic down I would want to have it to where if they click the same legend twice then it would remove that legend from the array. In fact, I could probably do that part next. Then worry about the random selection part toward the next step. I could use the includes keyword for Arrays and see if I can find the legend that way. 
+
+
+What I'm going to have to do is create a div so that the span tag can be targeted
