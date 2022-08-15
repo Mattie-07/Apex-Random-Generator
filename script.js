@@ -4,6 +4,7 @@ let thisLegend = "";
 
 for (const legends of legend) {
   legends.addEventListener("click", (e) => {
+    console.log(legends.getAttribute("id"));
     if (legendsPicks.includes(e.target.id)) {
       console.log("working");
     }
