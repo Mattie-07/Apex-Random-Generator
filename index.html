@@ -8,46 +8,65 @@
     <title>Apex Random Generator</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
+        <nav class="navbar">
+            <ul class="logo">
+                <li>Apex Legends</li>
+            </ul>
+            <ul class="items">
+                <li>About</li>
+                <li>Menu</li>
+            </ul>
+        </nav>
         <div class="headerText">
-            Welcome to Apex Random
+            <h2>Welcome to Apex Random</h2>
+            <h5>Pick the Legends you currently own to have a random one selected</h5>
         </div>
         <div class="apexGrid">
-            <div id="LifeLine" class="legend" onclick="storeValue()">
-                <img id="legend1" src="assets\Lifeline.jpg" alt="">
+            <div id="LifeLine" class="legend">
+                <img id="legend1" data-id="1" src="assets\Lifeline.jpg" alt="">
                 <div class="legendInfo">
                     <img src="assets\medicImage.jpg" alt="">
-                    <h2 id="legendName"> / <span id="legendRole"> </span></h2>
+                    <div class="titleRole">
+                        <h2 id="legendName"> / </h2>
+                        <h4 id="legendRole"> </span>
+                    </div>
                     <p id="legendDescription"></p>
                 </div>
             </div>
-            <div id="Bangalore" class="legend" onclick="storeValue()">
-                <img id="legend2" src="assets\Bangalore.jpg" alt="">
+            <div id="Bangalore" class="legend">
+                <img id="legend2" data-id="2" src="assets\Bangalore.jpg" alt="">
                 <div class="legendInfo">
                     <img src="assets\offenseImage.jpg" alt="">
-                    <h2>Bangalore / <span> Professional Soldier</span></h2>
-                    <p id="legendDescription">About Lifeline</p>
+                    <h2> / <span> Professional Soldier</span></h2>
+                    <p id="legendDescription"></p>
                 </div>
             </div>
-            <div id="Octane" class="legend" onclick="storeValue()">
-                <img id="legend3" src="assets\octane.jpg" alt="">
+            <div id="Octane" class="legend">
+                <img id="legend3" data-id="3" src="assets\octane.jpg" alt="">
                 <div class="legendInfo">
                     <img src="assets\offenseImage.jpg" alt="">
                     <h2> &nbsp;&nbsp;Octane /<span> High speed Daredevil</span></h2>
-                    <p id="legendDescription">About Lifeline</p>
+                    <p id="legendDescription"></p>
                 </div>
             </div>
-            <div id="Gibraltar" class="legend" onclick="storeValue()">
-                <img id="legend4" src="assets\gibby.jpg" alt="">
+            <div id="Gibraltar" class="legend">
+                <img id="legend4" data-id="4" src="assets\gibby.jpg" alt="">
                 <div class="legendInfo">
                     <img src="assets\defenseImage.jpg" alt="">
                     <h2>Gibraltar / <span>Shielded Fortress</span></h2>
-                    <p id="legendDescription">About Lifeline</p>
+                    <p id="legendDescription"></p>
                 </div>
             </div>
+        </div>
+        <div class="buttonDiv">
+            <button id="randomButton">Random Legend</button>
         </div>
     </div>
 </body>

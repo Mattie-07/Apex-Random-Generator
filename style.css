@@ -1,9 +1,11 @@
 *{
     box-sizing:border-box;
+    margin:0;
+    font-family: 'Roboto', sans-serif;
 }
 
 body{
-    background:#37123C;
+    background:#1b6122;
 }
 
 .container{
@@ -11,10 +13,45 @@ body{
     flex-direction:column;
 }
 
+.navbar{
+    background-color:black;
+    height:5rem;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+
+
+.navbar .logo, .navbar .items{
+    color:white;
+    text-decoration: none;
+    list-style-type: none;
+    display:flex;
+    flex-direction: row;
+}
+.buttonDiv{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.buttonDiv button{
+    height:50px;
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+    background-color: #f14b00;
+}
+.buttonDiv button:hover{
+    transition: .5s;
+    scale:1.1
+}
+
 .headerText{
     color:#A99F96;
     font-size:3rem;
-    width:100vw;
     margin-top:6rem;
     margin-left:73px;
 }
@@ -98,10 +135,28 @@ div.legend.blue{
 }
 
 
-div.legend:hover img{
-    opacity:1;
-    transform: scale(1.1);
+div.legend img{
+    opacity: 1;
 }
+
+div.legend:hover img{
+    opacity:.5;
+    transform: scale(1.1);
+} 
+
+.apexGrid .legend{
+    border: none;
+    border-radius:.5rem;
+    outline-offset: calc(var(--gap) * 0.2);
+    outline: 4px solid transparent;
+    transition:all .3s ease-in-out
+}
+
+.apexGrid .legend.selected{
+    outline-color: #f14b00
+}
+
+
 div.legend:hover:before,
 div.legend.hover:before{
     -webkit-transform: rotate(110deg) translateY(-150%);
@@ -137,10 +192,13 @@ div.legend.hover h2{
     display:inline;
 }
 .apexGrid{
+    --gap: 2em;
+    gap: var(--gap);
     display:grid;
     grid-template-columns:repeat(4, 1fr);
     grid-template-rows:auto;
-    height:100vh;
+    height:75vh;
+    margin:5rem;
 }
 
 .legendInfo{
@@ -173,6 +231,7 @@ div.legend.hover h2{
 .legendInfo p{
     display:block;
 }
+
 
 /* {
     0% { opacity: 0; filter: brightness(1) blur(20px) }

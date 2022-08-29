@@ -2,3 +2,18 @@ So I was able to put the legends inside of an array. The next move would be to c
 
 
 What I'm going to have to do is create a div so that the span tag can be targeted
+
+I dont want any one function to do much. So i already have the code established for if someone was to click a legend
+Now, I just need to have the code to check to see if the legend is already in the array. If they are then they
+would need to be removed, if not then the rest of the program should act as normal.
+The first thing I want to do is clean up the code that I have before I try and move forward.
+Also what I want to do is return the new arary if we need to 
+
+I'm not going to lie. I feel alittle overwhelmed right now. In moments like these, I'm going to have to take a step back, look at the situation and then dive right back in.
+
+Ok so I'm going to switch tactics real quick and make this website just a bit more better. I can use the api from the website to make it a bit more functional and fleshed out. I dont think that I would want to use the api for anything but the generator but it would be useful to know the crafting rotations 
+
+It would be nice if the website took multiple inputs from the user but I'm not so sure how that would work right now. The only thing I can think of is where it would display information based on which legends the person owns. Or being able to look up your legend or any of your friends. Maybe! This is not a bad idea. There could be a way to save all the data that you find when you log in so you can look that up immediatedly. And you can do the same for your friends or any "famous" players out there....Its not a bad though. Let me get to writing though. 
+The next part I want to do is make the button functional so that a random legend can be chosen from the list that I already have. 
+
+what I can do insead of calling the function outside of scope, I can just create the button that will call the fucntion and then also generate which legend will be picked from that same code as well.
