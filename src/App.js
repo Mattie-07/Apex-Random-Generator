@@ -95,13 +95,13 @@ function App() {
         }
       />
       <Content />
-      <Footer />
       <Legend
         legends={legends}
         selectedClass={selectedClass}
         handleLegendCardClick={handleLegendCardClick}
         handleLegendSelectionChange={handleLegendSelectionChange}
       />
+      <Footer />
     </>
   );
 }
