@@ -3,7 +3,7 @@ import Header from "./Header";
 import Content from "./Content";
 import Footer from "./Footer";
 import Legend from "./Legends";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function App() {
   const [selectedClass, setClass] = useState("Offense");
@@ -69,6 +69,8 @@ function App() {
       ],
     },
   ]);
+
+  useEffect(() => {}, []);
 
   function handleLegendSelectionChange(event) {
     console.log(event.target.value);
