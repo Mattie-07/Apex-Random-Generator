@@ -17,7 +17,7 @@ const  Legends = ({legends, selectedClass, handleLegendCardClick, handleLegendSe
                     <div className="card-collection">
                     {
                     legends.map((legend) => (
-                        <div key={legeend.id} id={legend.id} className={(legend.role === selectedClass ? 'card m-2 standout':'card m-2')} style={{cursor:'pointer'}} onClick={handleLegendCardClick} >                            
+                        <div key={legend.id} id={legend.id} className={(legend.role === selectedClass ? 'card m-2 standout':'card m-2')} style={{cursor:'pointer'}} onClick={handleLegendCardClick} >                            
                             <img src={legend.legendImage} className="img-size card-img-top" alt="" />
                             <div className="card-body">
                                 <h2 className="card-title">Legend Name: {legend.name}</h2> 
