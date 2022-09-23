@@ -1,9 +1,11 @@
 import "./App.css";
 import Header from "./Header";
-import Content from "./Content";
 import Footer from "./Footer";
 import Legend from "./Legends";
+import GroupedLegendClass from "./GroupedLegendClass";
 import { useState, useEffect } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Nav from "./Nav";
 
 function App() {
   const [selectedClass, setClass] = useState(
@@ -100,20 +102,33 @@ function App() {
   }
   return (
     <>
-      <Header
-        selectedClass={selectedClass}
-        legendCount={
-          legends.filter((legend) => legend.role === selectedClass).length
-        }
-      />
-      <Content />
-      <Legend
-        legends={legends}
-        selectedClass={selectedClass}
-        handleLegendCardClick={handleLegendCardClick}
-        handleLegendSelectionChange={handleLegendSelectionChange}
-      />
-      <Footer />
+      <Router>
+        <Nav />
+        <Header
+          selectedClass={selectedClass}
+          legendCount={
+            legends.filter((legend) => legend.role === selectedClass).length
+          }
+        />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <Legend
+                legends={legends}
+                selectedClass={selectedClass}
+                handleLegendCardClick={handleLegendCardClick}
+                handleLegendSelectionChange={handleLegendSelectionChange}
+              />
+            }
+          ></Route>
+          <Route
+            path="/GroupedLegendClass"
+            element={<GroupedLegendClass />}
+          ></Route>
+        </Routes>
+        <Footer />
+      </Router>
     </>
   );
 }
