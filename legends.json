@@ -4,6 +4,7 @@
             "id":1,
             "name":"Lifeline",
             "role":"Combat Medic",
+            "category":"support",
             "legendImage":"LifeLine.jpg",
             "classIcon":"",
             "abilities":[{ 
@@ -14,6 +15,7 @@
             "id":2,
             "name":"Bangalore",
             "role":"Professional Soldier",
+            "cateogry":"assault",
             "legendImage":"",
             "classIcon":"",
             "abilities":[{
@@ -27,6 +29,7 @@
             "id":3,
             "name":"Octane",
             "role":"Speed Daredevil",
+            "category":"assault",
             "legendImage":"",
             "classIcon":"",
             "abilities":[{
@@ -40,6 +43,7 @@
             "id":4,
             "name":"Gibraltar",
             "role":"Shielded Fortress",
+            "category":"defense",
             "legendImage":"",
             "classIcon":"",
             "abilities":[{
