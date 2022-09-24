@@ -38,6 +38,7 @@ function randomLegend() {
     var legendPicked = Math.floor(Math.random() * newLegendArray.length);
     console.log(legendPicked);
     console.log(legendsPicks);
+    //testing
   });
 }
 randomLegend();
