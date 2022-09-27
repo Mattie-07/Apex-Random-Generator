@@ -17,3 +17,7 @@ It would be nice if the website took multiple inputs from the user but I'm not s
 The next part I want to do is make the button functional so that a random legend can be chosen from the list that I already have. 
 
 what I can do insead of calling the function outside of scope, I can just create the button that will call the fucntion and then also generate which legend will be picked from that same code as well.
+
+Like I mentioned in the other notepad, the function, in general works fine. The only thing is the number that has to be returned in the array has to be that particular value and not the index iteself.
+
+So as of right now ,the random Generator works. Let me try and do some thing basic like display a message after the legend is chosen. Then the next logical step would be removing all the other legends in the array becuase the one that was chosen will be the only card lit.

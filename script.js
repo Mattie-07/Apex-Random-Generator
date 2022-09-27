@@ -36,8 +36,8 @@ console.log(randomLegend);
 function randomLegend() {
   randomButton.addEventListener("click", (e) => {
     var legendPicked = Math.floor(Math.random() * newLegendArray.length);
-    // console.log(legendPicked);
-    console.log(legendsPicks[legendPicked]);
+    document.getElementById("legendBox").style.display = "flex";
+    console.log("The legend that you picked is", legendsPicks[legendPicked]);
     //testing
   });
 }
