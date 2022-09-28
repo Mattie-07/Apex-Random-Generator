@@ -46,9 +46,9 @@ randomLegend();
 //i would need to have a for loop that loops through all of this so that all of the information can go to the right legend. No need to rewrite this 16 or so times
 fetch(apexUrl).then((response) =>
   response.json().then((data) => {
-    console.log(data.legends[{ legendsPicks }]);
     data.legends.forEach((e) => {
       let legendName = `${e.name}`;
+      console.log(legendName);
       // console.log(legendName);
     });
     document.querySelector("#legendDescription").innerText =
