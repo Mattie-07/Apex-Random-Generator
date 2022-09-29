@@ -19,9 +19,9 @@
             "legendImage":"",
             "classIcon":"",
             "abilities":[{
-                "passive":"",
-                "tactical":"",
-                "ultimate":""
+                "passive":"Double Time: Taking fire while sprinting makes you move faster for a breif moment ",
+                "tactical":"Smoke Launcher: Fire a smoke canister that explodes into a cloud of smog on impact.",
+                "ultimate":"Rolling Thunder: Calls in an artillery strike that creeps across the landscape."
                 }]
 
     }     
