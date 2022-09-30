@@ -33,9 +33,9 @@
             "legendImage":"",
             "classIcon":"",
             "abilities":[{
-                "passive":"",
-                "tactical":"",
-                "ultimate":""
+                "passive":"Swift Mend: Automatically restores health overtime.",
+                "tactical":"stim: At the cost of 10% of your health, Ooctane will move 30% faster and 40% faster while sprinting.",
+                "ultimate":"Launch Pad: Deploy a jumpad that launhces you and your teammates throught the air."
                 }]
 
     }     
