@@ -47,9 +47,9 @@
             "legendImage":"",
             "classIcon":"",
             "abilities":[{
-                "passive":"",
-                "tactical":"",
-                "ultimate":""
+                "passive":"Gun Shield: Aiming down sights deploys a shield that absorbs incoming fire",
+                "tactical":"Dome of Protection: Throws down a dome that blocks any incoming fire.",
+                "ultimate":"Defensive Bombardment: Calls down a mortar strike on a particulart location:"
                 }]
         }     
         ]
