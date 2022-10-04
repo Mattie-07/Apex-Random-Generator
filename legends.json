@@ -52,5 +52,57 @@
                 "ultimate":"Defensive Bombardment: Calls down a mortar strike on a particulart location:"
                 }]
         }     
+    ,{
+            "id":5,
+            "name":"Bloodhound",
+            "role":"Technological Tracker",
+            "category":"survey",
+            "legendImage":"",
+            "classIcon":"",
+            "abilities":[{
+                "passive":"Tracker: See tracks left behind by your foes.",
+                "tactical":"Eye of the Allfather: Breifly reveal hidden enemies, traps, and clues throughout structures in front of you.",
+                "ultimate":"Beast of the Hunt: Enhances your senses, allowing you to move faster and highlighting your prey"
+                }]
+        }     
+    ,{
+            "id":6,
+            "name":"Pathfinder",
+            "role":"Forward Scout",
+            "category":"Survey",
+            "legendImage":"",
+            "classIcon":"",
+            "abilities":[{
+                "passive":"Insider Knowledge: Scan a survey beacon to reveal the ring's next location",
+                "tactical":"Grappling Hook: Grapple to get to out-of-reach places quickly",
+                "ultimate":"Zipline Gun: Create a zipline for everyone to use"
+                }]
+        }     
+    ,{
+            "id":7,
+            "name":"Wraith",
+            "role":"Interdimensional Skirmisher",
+            "category":"assault",
+            "legendImage":"",
+            "classIcon":"",
+            "abilities":[{
+                "passive":"Voices from the Void: A voice warns you when danger approaches. As far as you can tell, it's on your side.",
+                "tactical":"Into the Void: Reposition quickly through the safety of void space, avoiding all damage",
+                "ultimate":"Dimensional Rift: Link two locations with portals for 60 seconds, allowing your entire team to use them."
+                }]
+        }     
+    ,{
+            "id":8,
+            "name":"Caustic",
+            "role":"Toxic Trapper",
+            "category":"defense",
+            "legendImage":"",
+            "classIcon":"",
+            "abilities":[{
+                "passive":"Allows you to see enemies through your gas.",
+                "tactical":"Drop canisters that release deadly Nox gas when shot or triggered by enemies.",
+                "ultimate":"Blankets a large area in Nox gas."
+                }]
+        }     
         ]
         }
