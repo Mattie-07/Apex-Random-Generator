@@ -104,5 +104,31 @@
                 "ultimate":"Blankets a large area in Nox gas."
                 }]
         }     
+    ,{
+            "id":9,
+            "name":"Wattson",
+            "role":"Static Defender",
+            "category":"defense",
+            "legendImage":"",
+            "classIcon":"",
+            "abilities":[{
+                "passive":"Spark of Genius: Ultimate Accelerants fully charge your Ultimate Ability",
+                "tactical":"Perimeter Security: Connect nodes to create electrified fences that damage and slow enemies.",
+                "ultimate":"Interception Pylon: Place an electrified pylon that destroys incoming ornance and repairs damaged shields."
+                }]
+        }     
+    ,{
+            "id":10,
+            "name":"Loba",
+            "role":"Translocating Thief",
+            "category":"support",
+            "legendImage":"",
+            "classIcon":"",
+            "abilities":[{
+                "passive":"Eye for Quality: Nearby epic and legendary loot can be seen through walls. The range is the same as Black Marke Boutique.",
+                "tactical":"Burglar's Best Friend: Teleport to hard-to-reach places or escape trouble quickly by throwing your Jump Drive bracelet.",
+                "ultimate":"Black Market Boutique; Place a portable device that allows you to teleport nearby loot to your inventory. Each friendly or enemy Legend can take up to two items. "
+                }]
+        }     
         ]
         }
