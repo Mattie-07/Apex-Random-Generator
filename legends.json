@@ -156,5 +156,31 @@
                 "ultimate":"Black Hole: Deploy N.E.W.T to create a micro black hole that pulls players in towards it, and hits them with a graviton blast at the end."
                 }]
         }     
+    ,{
+            "id":13,
+            "name":"Crypto",
+            "role":"Surveillance Expert",
+            "category":"survey",
+            "legendImage":"",
+            "classIcon":"",
+            "abilities":[{
+                "passive":"Neurolink: Enemies detected by the Surveillance Drone within 30 meters of your position are marked for you and your teammates to see.",
+                "tactical":"Surveillance Drone: Deploy an aerial drone that allows you to view the surrounding area from above. If the drone is destroyed, there is a forty-second cooldown before you can deply another.",
+                "ultimate":"Drone EMP: YOur Surveillance Drone sets off an EMP blast that deals sheild damage, slows enemies, and disables traps."
+                }]
+        }     
+    ,{
+            "id":14,
+            "name":"Horizon",
+            "role":"Gravitational Manipulator",
+            "category":"assault",
+            "legendImage":"",
+            "classIcon":"",
+            "abilities":[{
+                "passive":"Spacewalk: Increase air control and reduce fall impacts with Horizon's custom spacesuit.",
+                "tactical":"Gravity Lift: Reverses the flow of gravity, lifting players upwards and boosting them outward when they exit.",
+                "ultimate":"Black Hole: Deploy N.E.W.T to create a micro black hole that pulls players in towards it, and hits them with a graviton blast at the end."
+                }]
+        }     
         ]
         }
