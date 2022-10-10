@@ -182,5 +182,109 @@
                 "ultimate":"Black Hole: Deploy N.E.W.T to create a micro black hole that pulls players in towards it, and hits them with a graviton blast at the end."
                 }]
         }     
+    ,{
+            "id":14,
+            "name":"Horizon",
+            "role":"Gravitational Manipulator",
+            "category":"assault",
+            "legendImage":"",
+            "classIcon":"",
+            "abilities":[{
+                "passive":"Spacewalk: Increase air control and reduce fall impacts with Horizon's custom spacesuit.",
+                "tactical":"Gravity Lift: Reverses the flow of gravity, lifting players upwards and boosting them outward when they exit.",
+                "ultimate":"Black Hole: Deploy N.E.W.T to create a micro black hole that pulls players in towards it, and hits them with a graviton blast at the end."
+                }]
+        }     
+    ,{
+            "id":15,
+            "name":"Ash",
+            "role":"Incisive Instigator",
+            "category":"assault",
+            "legendImage":"",
+            "classIcon":"",
+            "abilities":[{
+                "passive":"Marked For Death: Ash's map shows the location of recent deathboxes and marks surviving attackers",
+                "tactical":"Arc Snare: Throw a spinning snare that damages and tethers the first enemy who gets too close.",
+                "ultimate":"Phase Breach: Tear open a one-way portal to a targeted location."
+                }]
+        }     
+    ,{
+            "id":16,
+            "name":"Revenant",
+            "role":"Synthetic Nightmare",
+            "category":"assault",
+            "legendImage":"",
+            "classIcon":"",
+            "abilities":[{
+                "passive":"Stalker: You crouch walk faster and can climb higher than other Legends.",
+                "tactical":"Silence: Throw a device that deals damage and disables enemy abilities.",
+                "ultimate":"Death Totem: Drop a totem that protects those who use it from death for a set amount of time. Instead of being killed or downed, users will return to the totem."
+                }]
+        }     
+    ,{
+            "id":17,
+            "name":"Valkyrie",
+            "role":"Synthetic Nightmare",
+            "category":"assault",
+            "legendImage":"",
+            "classIcon":"",
+            "abilities":[{
+                "passive":"VTOL Jets: Use jetpacks to fly. Fuel is limited but refills overtime.",
+                "tactical":"Missle Swarm: Fire a swarm of mini-rockets that damage and disorient the enemy.",
+                "ultimate":"Skyward Dive: Launch into the air and sky dive. Allies can hook into take-off systems to join you."
+                }]
+        }     
+    ,{
+            "id":17,
+            "name":"Valkyrie",
+            "role":"Synthetic Nightmare",
+            "category":"assault",
+            "legendImage":"",
+            "classIcon":"",
+            "abilities":[{
+                "passive":"VTOL Jets: Use jetpacks to fly. Fuel is limited but refills overtime.",
+                "tactical":"Missle Swarm: Fire a swarm of mini-rockets that damage and disorient the enemy.",
+                "ultimate":"Skyward Dive: Launch into the air and sky dive. Allies can hook into take-off systems to join you."
+                }]
+        }     
+    ,{
+            "id":18,
+            "name":"Mad Maggie",
+            "role":"Rebel Warlord",
+            "category":"assault",
+            "legendImage":"",
+            "classIcon":"",
+            "abilities":[{
+                "passive":"Warlord's Ire: Temporarily highlight enemies you've damaged, and move faster with a shotgun.",
+                "tactical":"Riot Drill: Fire a drill that burns enemies through obstacles.",
+                "ultimate":"Wrecking Ball: Throw a ball that releases speed-boosting pads that detonates near enemies."
+                }]
+        }     
+    ,{
+            "id":19,
+            "name":"Seer",
+            "role":"Ambush Artist",
+            "category":"survey",
+            "legendImage":"",
+            "classIcon":"",
+            "abilities":[{
+                "passive":"Heart Seeker: Hear and visualize the heartbeats of nearby enemies when aiming down sights.",
+                "tactical":"Focus of Attention: Seer summons his micro-drones to emit a delayed blast that goes through walls interrupting and revealing enemies.",
+                "ultimate":"Exhibit: Create a sphere of micro-drones that reveal the location of enemies moving quickly or firing their weapon within."
+                }]
+        }     
+    ,{
+            "id":20,
+            "name":"Mad Maggie",
+            "role":"Rebel Warlord",
+            "category":"assault",
+            "legendImage":"",
+            "classIcon":"",
+            "abilities":[{
+                "passive":"Warlord's Ire: Temporarily highlight enemies you've damaged, and move faster with a shotgun.",
+                "tactical":"Riot Drill: Fire a drill that burns enemies through obstacles.",
+                "ultimate":"Wrecking Ball: Throw a ball that releases speed-boosting pads that detonates near enemies."
+                }]
+        }     
         ]
         }
