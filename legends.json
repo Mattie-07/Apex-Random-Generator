@@ -275,15 +275,41 @@
         }     
     ,{
             "id":20,
-            "name":"Mad Maggie",
-            "role":"Rebel Warlord",
+            "name":"Vantage",
+            "role":"Sniper Savant",
             "category":"assault",
             "legendImage":"",
             "classIcon":"",
             "abilities":[{
-                "passive":"Warlord's Ire: Temporarily highlight enemies you've damaged, and move faster with a shotgun.",
-                "tactical":"Riot Drill: Fire a drill that burns enemies through obstacles.",
-                "ultimate":"Wrecking Ball: Throw a ball that releases speed-boosting pads that detonates near enemies."
+                "passive":"Spotter's Lens: Aim down sights to scount with your eyepiece( unarmed or with mid-to long rance scopes) and use a bullet drop indicator to see where your shots will land",
+                "tactical":"Echo Relocation: Position your winged companion Echo and then Launch towards him. Must have line of sight for Echo to launch.",
+                "ultimate":"Sniper's Mark: Use your custom sniper rifle to mark enemy targets and apply a damage bonus for you and your team."
+                }]
+        }     
+    ,{
+            "id":21,
+            "name":"Rampart",
+            "role":"Amped Modder",
+            "category":"defense",
+            "legendImage":"",
+            "classIcon":"",
+            "abilities":[{
+                "passive":"Modded Loader: Increased magazine capacity and faster reloards when using LMGs and Minigun",
+                "tactical":"Build a crouch-cover wall, which deploys a full-cover amped wall that blocks incoming shots and amps outgoing shots.",
+                "ultimate":"Emplaced Minigun 'Sheila': Place a machine gun that anyone can use. High ammo capacity, long reload time."
+                }]
+        }     
+    ,{
+            "id":22,
+            "name":"New Castle",
+            "role":"Heroic Defender",
+            "category":"defense",
+            "legendImage":"",
+            "classIcon":"",
+            "abilities":[{
+                "passive":"Retrieve the Wounded: Drag downed allies as you revive and protect them with your revive shield.",
+                "tactical":"Mobile Shield: Throw a controllable drone that creates a moving energy shield.",
+                "ultimate":"Castl Wall: Leap to an ally or target area and slam down, creating a fortified stronghold."
                 }]
         }     
         ]
