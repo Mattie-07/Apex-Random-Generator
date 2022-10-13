@@ -23,3 +23,6 @@ Like I mentioned in the other notepad, the function, in general works fine. The 
 So as of right now ,the random Generator works. Let me try and do some thing basic like display a message after the legend is chosen. Then the next logical step would be removing all the other legends in the array becuase the one that was chosen will be the only card lit.
 
 I would like to write a proper readme and it would be really nice to have a backened as well. Like have the ability to save a username and such. I'm relearning Node so it might take awhile before I'm able to just do it off the bat but I believe with a little bit of time, that this should be a good goal to accomplish. It would be nice to have a good grip on Node and then afterward, be able to try the backend in a different langaage.
+
+
+I was honestly too busy to add anything to the code today but tomorrow will be a better one.
