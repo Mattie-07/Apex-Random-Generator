@@ -183,19 +183,6 @@
                 }]
         }     
     ,{
-            "id":14,
-            "name":"Horizon",
-            "role":"Gravitational Manipulator",
-            "category":"assault",
-            "legendImage":"",
-            "classIcon":"",
-            "abilities":[{
-                "passive":"Spacewalk: Increase air control and reduce fall impacts with Horizon's custom spacesuit.",
-                "tactical":"Gravity Lift: Reverses the flow of gravity, lifting players upwards and boosting them outward when they exit.",
-                "ultimate":"Black Hole: Deploy N.E.W.T to create a micro black hole that pulls players in towards it, and hits them with a graviton blast at the end."
-                }]
-        }     
-    ,{
             "id":15,
             "name":"Ash",
             "role":"Incisive Instigator",
@@ -233,20 +220,7 @@
                 "tactical":"Missle Swarm: Fire a swarm of mini-rockets that damage and disorient the enemy.",
                 "ultimate":"Skyward Dive: Launch into the air and sky dive. Allies can hook into take-off systems to join you."
                 }]
-        }     
-    ,{
-            "id":17,
-            "name":"Valkyrie",
-            "role":"Synthetic Nightmare",
-            "category":"assault",
-            "legendImage":"",
-            "classIcon":"",
-            "abilities":[{
-                "passive":"VTOL Jets: Use jetpacks to fly. Fuel is limited but refills overtime.",
-                "tactical":"Missle Swarm: Fire a swarm of mini-rockets that damage and disorient the enemy.",
-                "ultimate":"Skyward Dive: Launch into the air and sky dive. Allies can hook into take-off systems to join you."
-                }]
-        }     
+        }      
     ,{
             "id":18,
             "name":"Mad Maggie",

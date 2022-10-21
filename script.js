@@ -10,7 +10,7 @@ let thisLegend = "";
 let newLegendArray = [];
 
 function legendClicked() {
-  legendName.appendChild(legendRole);
+  // legendName.appendChild(legendRole);
   for (const legends of legend) {
     legends.addEventListener("click", (e) => {
       const legendDiv = e.target.closest("img");
