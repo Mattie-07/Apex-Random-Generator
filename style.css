@@ -197,6 +197,12 @@ div.legend.hover h2{
     object-fit: cover;
     transition:.5s ease;
 }
+.legendStyle{
+    height:775px;
+    width:100%;
+    object-fit: cover;
+    transition:.5s ease;
+}
 
 
 /* #legend1:hover, #legend2:hover, #legend3:hover, #legend4:hover{
@@ -204,7 +210,6 @@ div.legend.hover h2{
 
 } */
 .legend img{
-    height:200px;
     border-radius:10px 10px 0px 0px;
 }
 
