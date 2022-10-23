@@ -16,7 +16,7 @@
             "name":"Bangalore",
             "role":"Professional Soldier",
             "cateogry":"assault",
-            "legendImage":"",
+            "legendImage":"Bangalore.jpg",
             "classIcon":"",
             "abilities":[{
                 "passive":"Double Time: Taking fire while sprinting makes you move faster for a breif moment ",
@@ -30,7 +30,7 @@
             "name":"Octane",
             "role":"Speed Daredevil",
             "category":"assault",
-            "legendImage":"",
+            "legendImage":"octane.jpg",
             "classIcon":"",
             "abilities":[{
                 "passive":"Swift Mend: Automatically restores health overtime.",
@@ -44,7 +44,7 @@
             "name":"Gibraltar",
             "role":"Shielded Fortress",
             "category":"defense",
-            "legendImage":"",
+            "legendImage":"gibby.jpg",
             "classIcon":"",
             "abilities":[{
                 "passive":"Gun Shield: Aiming down sights deploys a shield that absorbs incoming fire",
