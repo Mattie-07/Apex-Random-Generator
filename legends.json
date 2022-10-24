@@ -57,7 +57,7 @@
             "name":"Bloodhound",
             "role":"Technological Tracker",
             "category":"survey",
-            "legendImage":"",
+            "legendImage":"bloodhound.jpg",
             "classIcon":"",
             "abilities":[{
                 "passive":"Tracker: See tracks left behind by your foes.",

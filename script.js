@@ -15,14 +15,8 @@ fetch(apexUrl).then((response) =>
   response.json().then((data) => {
     data.legends.forEach((legend) => {
       const element = `
-      ${(() => {
-        let x = 0;
-        if (x === 0) console.log("test");
-      })()}
       <div onclick="legendClicked(this)" id="${legend.id}" class="legend">
-        <img class="legendStyle" data-id="1" src="assets/${
-          legend.legendImage
-        }" alt="" />
+        <img class="legendStyle" data-id="${legend.id}" src="assets/${legend.legendImage}" alt="" />
         <div class="legendInfo">
             <img src="assets/medicImage.jpg" alt="">
             <div class="titleRole">
@@ -52,13 +46,12 @@ function legendClicked() {
       } else {
         legendsPicks.splice(selectedLegend, 1);
       }
-      console.log(legendsPicks);
+
       newLegendArray = legendsPicks;
     });
   }
+  console.log(legendsPicks.length);
 }
-
-const myTimeout = setTimeout(legendClicked, 5000);
 
 function randomLegend() {
   randomButton.addEventListener("click", (e) => {
