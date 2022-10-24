@@ -14,17 +14,22 @@ let newLegendArray = [];
 fetch(apexUrl).then((response) =>
   response.json().then((data) => {
     data.legends.forEach((legend) => {
-      console.log(legend);
       const element = `
+      ${(() => {
+        let x = 0;
+        if (x === 0) console.log("test");
+      })()}
       <div onclick="legendClicked(this)" id="${legend.id}" class="legend">
-        <img class="legendStyle" data-id="1" src="assets/${legend.legendImage}" alt="" />
+        <img class="legendStyle" data-id="1" src="assets/${
+          legend.legendImage
+        }" alt="" />
         <div class="legendInfo">
             <img src="assets/medicImage.jpg" alt="">
             <div class="titleRole">
                 <h2 class="legendName">${legend.name}</h2>
                 <h4 id="legendRole">${legend.role} </span>
             </div>
-            <p id="legendDescription"></p>
+            <p id="legendDescription">Testing</p>
         </div>
       </div>
       `;
@@ -38,7 +43,6 @@ function legendClicked() {
   const legend = document.querySelectorAll(".legend");
   for (const legends of legend) {
     legends.addEventListener("click", (e) => {
-      console.log("test");
       const legendDiv = e.target.closest("img");
       const selectedLegegend = e.target.closest("div");
       selectedLegegend.classList.toggle("selected");

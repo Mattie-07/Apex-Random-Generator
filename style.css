@@ -5,7 +5,7 @@
 }
 
 body{
-    background:#1b6122;
+    background-color:#FAF9F6
 }
 .container{
     display:flex;
@@ -84,8 +84,8 @@ div.legend{
     overflow: hidden;
     margin: 10px;
     min-width: 220px;
-    max-width: 310px;
-    max-height: 945px;
+    max-width: 398px;
+    /* max-height: 945px; */
     width: 100%;
     background: #000000;
     color: #ffffff;
