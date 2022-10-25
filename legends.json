@@ -6,7 +6,7 @@
             "role":"Combat Medic",
             "category":"support",
             "legendImage":"LifeLine.jpg",
-            "classIcon":"",
+            "classIcon":"medicImage.jpg",
             "abilities":[{ 
                 "passive":"Combat Medic: Lifeline's passive allows her to tap a knocked teammate in order to revive them, freeing her to continue fighting.",
                 "tactical":"D.O.C Healing Drone: After being deployed,  D.O.C. will heal everyone around it at a rate of eight health per second up to a maximum of 150 health.",
@@ -17,7 +17,7 @@
             "role":"Professional Soldier",
             "cateogry":"assault",
             "legendImage":"Bangalore.jpg",
-            "classIcon":"",
+            "classIcon":"offenseImage.jpg",
             "abilities":[{
                 "passive":"Double Time: Taking fire while sprinting makes you move faster for a breif moment ",
                 "tactical":"Smoke Launcher: Fire a smoke canister that explodes into a cloud of smog on impact.",
@@ -31,7 +31,7 @@
             "role":"Speed Daredevil",
             "category":"assault",
             "legendImage":"octane.jpg",
-            "classIcon":"",
+            "classIcon":"offenseImage.jpg",
             "abilities":[{
                 "passive":"Swift Mend: Automatically restores health overtime.",
                 "tactical":"stim: At the cost of 10% of your health, Ooctane will move 30% faster and 40% faster while sprinting.",
@@ -45,7 +45,7 @@
             "role":"Shielded Fortress",
             "category":"defense",
             "legendImage":"gibby.jpg",
-            "classIcon":"",
+            "classIcon":"defenseImage.jpg",
             "abilities":[{
                 "passive":"Gun Shield: Aiming down sights deploys a shield that absorbs incoming fire",
                 "tactical":"Dome of Protection: Throws down a dome that blocks any incoming fire.",
@@ -56,9 +56,9 @@
             "id":5,
             "name":"Bloodhound",
             "role":"Technological Tracker",
-            "category":"survey",
+            "category":"recon",
             "legendImage":"bloodhound.jpg",
-            "classIcon":"",
+            "classIcon":"recon.jpg",
             "abilities":[{
                 "passive":"Tracker: See tracks left behind by your foes.",
                 "tactical":"Eye of the Allfather: Breifly reveal hidden enemies, traps, and clues throughout structures in front of you.",
@@ -69,9 +69,9 @@
             "id":6,
             "name":"Pathfinder",
             "role":"Forward Scout",
-            "category":"Survey",
+            "category":"recon",
             "legendImage":"path.jpg",
-            "classIcon":"",
+            "classIcon":"recon.jpg",
             "abilities":[{
                 "passive":"Insider Knowledge: Scan a survey beacon to reveal the ring's next location",
                 "tactical":"Grappling Hook: Grapple to get to out-of-reach places quickly",
@@ -84,7 +84,7 @@
             "role":"Interdimensional Skirmisher",
             "category":"assault",
             "legendImage":"wraith.jpg",
-            "classIcon":"",
+            "classIcon":"offenseImage.jpg",
             "abilities":[{
                 "passive":"Voices from the Void: A voice warns you when danger approaches. As far as you can tell, it's on your side.",
                 "tactical":"Into the Void: Reposition quickly through the safety of void space, avoiding all damage",
@@ -97,7 +97,7 @@
             "role":"Toxic Trapper",
             "category":"defense",
             "legendImage":"caustic.jpg",
-            "classIcon":"",
+            "classIcon":"defenseImage.jpg",
             "abilities":[{
                 "passive":"Allows you to see enemies through your gas.",
                 "tactical":"Drop canisters that release deadly Nox gas when shot or triggered by enemies.",
@@ -110,7 +110,7 @@
             "role":"Static Defender",
             "category":"defense",
             "legendImage":"wattson.jpg",
-            "classIcon":"",
+            "classIcon":"defenseImage.jpg",
             "abilities":[{
                 "passive":"Spark of Genius: Ultimate Accelerants fully charge your Ultimate Ability",
                 "tactical":"Perimeter Security: Connect nodes to create electrified fences that damage and slow enemies.",
@@ -123,7 +123,7 @@
             "role":"Translocating Thief",
             "category":"support",
             "legendImage":"loba.jpg",
-            "classIcon":"",
+            "classIcon":"medicImage.jpg",
             "abilities":[{
                 "passive":"Eye for Quality: Nearby epic and legendary loot can be seen through walls. The range is the same as Black Marke Boutique.",
                 "tactical":"Burglar's Best Friend: Teleport to hard-to-reach places or escape trouble quickly by throwing your Jump Drive bracelet.",
@@ -136,7 +136,7 @@
             "role":"Holographic Trickster",
             "category":"assault",
             "legendImage":"mirage.jpg",
-            "classIcon":"",
+            "classIcon":"offenseImage.jpg",
             "abilities":[{
                 "passive":"Now You See Me...:Automatically cloack when using Respawn Beacons and reviving teammates.",
                 "tactical":"Psyche Out: Send out a holographic decoy to confuse the enemy.",
@@ -149,7 +149,7 @@
             "role":"Gravitational Manipulator",
             "category":"assault",
             "legendImage":"horizon.jpg",
-            "classIcon":"",
+            "classIcon":"offenseImage.jpg",
             "abilities":[{
                 "passive":"Spacewalk: Increase air control and reduce fall impacts with Horizon's custom spacesuit.",
                 "tactical":"Gravity Lift: Reverses the flow of gravity, lifting players upwards and boosting them outward when they exit.",
@@ -160,9 +160,9 @@
             "id":13,
             "name":"Crypto",
             "role":"Surveillance Expert",
-            "category":"survey",
+            "category":"recon",
             "legendImage":"crypto.jpg",
-            "classIcon":"",
+            "classIcon":"recon.jpg",
             "abilities":[{
                 "passive":"Neurolink: Enemies detected by the Surveillance Drone within 30 meters of your position are marked for you and your teammates to see.",
                 "tactical":"Surveillance Drone: Deploy an aerial drone that allows you to view the surrounding area from above. If the drone is destroyed, there is a forty-second cooldown before you can deply another.",
@@ -175,7 +175,7 @@
             "role":"Bombastic Explosive Expert",
             "category":"assault",
             "legendImage":"fuse.jpg",
-            "classIcon":"",
+            "classIcon":"offenseImage.jpg",
             "abilities":[{
                 "passive":"Grenadier: Stack an etra grenade per inventory slot. Fire grenades farther, faster, and more accurately.",
                 "tactical":"Knuckle Cluster: Launch a cluster bomb that continuosly expels airbust explosives on impact.",
@@ -188,7 +188,7 @@
             "role":"Incisive Instigator",
             "category":"assault",
             "legendImage":"ash.jpg",
-            "classIcon":"",
+            "classIcon":"offenseImage.jpg",
             "abilities":[{
                 "passive":"Marked For Death: Ash's map shows the location of recent deathboxes and marks surviving attackers",
                 "tactical":"Arc Snare: Throw a spinning snare that damages and tethers the first enemy who gets too close.",
@@ -201,7 +201,7 @@
             "role":"Synthetic Nightmare",
             "category":"assault",
             "legendImage":"revenant.jpg",
-            "classIcon":"",
+            "classIcon":"offenseImage.jpg",
             "abilities":[{
                 "passive":"Stalker: You crouch walk faster and can climb higher than other Legends.",
                 "tactical":"Silence: Throw a device that deals damage and disables enemy abilities.",
@@ -212,9 +212,9 @@
             "id":17,
             "name":"Valkyrie",
             "role":"Winged Avenger",
-            "category":"assault",
+            "category":"recon",
             "legendImage":"valk.jpg",
-            "classIcon":"",
+            "classIcon":"recon.jpg",
             "abilities":[{
                 "passive":"VTOL Jets: Use jetpacks to fly. Fuel is limited but refills overtime.",
                 "tactical":"Missle Swarm: Fire a swarm of mini-rockets that damage and disorient the enemy.",
@@ -227,7 +227,7 @@
             "role":"Rebel Warlord",
             "category":"assault",
             "legendImage":"maggie.jpg",
-            "classIcon":"",
+            "classIcon":"offenseImage.jpg",
             "abilities":[{
                 "passive":"Warlord's Ire: Temporarily highlight enemies you've damaged, and move faster with a shotgun.",
                 "tactical":"Riot Drill: Fire a drill that burns enemies through obstacles.",
@@ -238,9 +238,9 @@
             "id":19,
             "name":"Seer",
             "role":"Ambush Artist",
-            "category":"survey",
+            "category":"recon",
             "legendImage":"seer.jpg",
-            "classIcon":"",
+            "classIcon":"recon.jpg",
             "abilities":[{
                 "passive":"Heart Seeker: Hear and visualize the heartbeats of nearby enemies when aiming down sights.",
                 "tactical":"Focus of Attention: Seer summons his micro-drones to emit a delayed blast that goes through walls interrupting and revealing enemies.",
@@ -251,9 +251,9 @@
             "id":20,
             "name":"Vantage",
             "role":"Sniper Savant",
-            "category":"assault",
+            "category":"recon",
             "legendImage":"vantage.jpg",
-            "classIcon":"",
+            "classIcon":"recon.jpg",
             "abilities":[{
                 "passive":"Spotter's Lens: Aim down sights to scount with your eyepiece( unarmed or with mid-to long rance scopes) and use a bullet drop indicator to see where your shots will land",
                 "tactical":"Echo Relocation: Position your winged companion Echo and then Launch towards him. Must have line of sight for Echo to launch.",
@@ -266,7 +266,7 @@
             "role":"Amped Modder",
             "category":"defense",
             "legendImage":"rampart.jpg",
-            "classIcon":"",
+            "classIcon":"defenseImage.jpg",
             "abilities":[{
                 "passive":"Modded Loader: Increased magazine capacity and faster reloards when using LMGs and Minigun",
                 "tactical":"Build a crouch-cover wall, which deploys a full-cover amped wall that blocks incoming shots and amps outgoing shots.",
@@ -279,7 +279,7 @@
             "role":"Heroic Defender",
             "category":"defense",
             "legendImage":"castle.jpg",
-            "classIcon":"",
+            "classIcon":"defenseImage.jpg",
             "abilities":[{
                 "passive":"Retrieve the Wounded: Drag downed allies as you revive and protect them with your revive shield.",
                 "tactical":"Mobile Shield: Throw a controllable drone that creates a moving energy shield.",

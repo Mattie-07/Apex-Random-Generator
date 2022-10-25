@@ -18,12 +18,13 @@ fetch(apexUrl).then((response) =>
       <div onclick="legendClicked(this)" id="${legend.id}" class="legend">
         <img class="legendStyle" data-id="${legend.id}" src="assets/${legend.legendImage}" alt="" />
         <div class="legendInfo">
-            <img src="assets/medicImage.jpg" alt="">
+            <img src="assets/${legend.classIcon}" alt="">
             <div class="titleRole">
                 <h2 class="legendName">${legend.name}</h2>
                 <h4 id="legendRole">${legend.role} </span>
             </div>
-            <p id="legendDescription">Testing</p>
+            <p id="legendDescription">Info</p>
+            <p id="legendDescriptionDisplay">Testing</p>
         </div>
       </div>
       `;

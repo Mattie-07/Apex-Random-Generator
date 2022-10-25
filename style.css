@@ -18,7 +18,7 @@ body{
     display:grid;
     grid-template-columns:repeat(4, 1fr);
     grid-template-rows:auto;
-    margin:5rem;
+    margin:5rem 10rem;
     height:100%;
 }
 
@@ -140,17 +140,17 @@ div.legendOne h2 span{
 }
 
 div.legend:before{
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
+    height: 36%;
+    width: 12%;
+    top: 254px;
+    left: 9px;
     content: '';
     background: #ffffff;
     position: absolute;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     -webkit-transform: rotate(110deg) translateY(-50%);
-    transform: rotate(110deg) translateY(-50%);
+    transform: rotate(108deg) translateY(-51%);
     }
 
 div.legend.blue{
@@ -159,11 +159,11 @@ div.legend.blue{
 
 
 div.legend img{
-    opacity: 1;
+    opacity: .7;
 }
 
 div.legend:hover img{
-    opacity:.5;
+    opacity:1;
     transform: scale(1.1);
 } 
 
@@ -205,6 +205,15 @@ div.legend.hover h2{
 }
 
 
+.legendInfo p{
+    display: none;
+}
+.legendInfo:hover p{
+    display:block;
+    color:black;
+}
+
+
 /* #legend1:hover, #legend2:hover, #legend3:hover, #legend4:hover{
     opacity:.3;
 
@@ -222,14 +231,16 @@ div.legend.hover h2{
 
 
 .legendInfo{
-    flex-direction:row;
-    margin-top:2rem;
-    padding-left:1rem;
-    padding-top:20px;
+    display:flex;
+    height:19%;
+    flex-direction:column;
+    justify-content: space-around;
+    padding-top:1rem;
     background-color:#71677C;
     border-radius:10px 0px 10px 10px;
     transition:all .5s;
-    padding-bottom:1rem;
+    padding-bottom:2rem;
+    align-items:center;
 }
 
 .legendInfo:hover{
@@ -248,9 +259,6 @@ div.legend.hover h2{
     display: none;
 }
 
-.legendInfo p{
-    display:block;
-}
 
 
 /* {

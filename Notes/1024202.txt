@@ -1,0 +1,1 @@
+Instead of using thos janky icons that i found on the internet, I could instead use the ones from font-awesome. Those would have a uniform look and in the end, it would be alot cleaner too.
