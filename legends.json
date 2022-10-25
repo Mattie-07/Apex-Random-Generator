@@ -70,7 +70,7 @@
             "name":"Pathfinder",
             "role":"Forward Scout",
             "category":"Survey",
-            "legendImage":"",
+            "legendImage":"path.jpg",
             "classIcon":"",
             "abilities":[{
                 "passive":"Insider Knowledge: Scan a survey beacon to reveal the ring's next location",
@@ -83,7 +83,7 @@
             "name":"Wraith",
             "role":"Interdimensional Skirmisher",
             "category":"assault",
-            "legendImage":"",
+            "legendImage":"wraith.jpg",
             "classIcon":"",
             "abilities":[{
                 "passive":"Voices from the Void: A voice warns you when danger approaches. As far as you can tell, it's on your side.",
@@ -96,7 +96,7 @@
             "name":"Caustic",
             "role":"Toxic Trapper",
             "category":"defense",
-            "legendImage":"",
+            "legendImage":"caustic.jpg",
             "classIcon":"",
             "abilities":[{
                 "passive":"Allows you to see enemies through your gas.",
@@ -109,7 +109,7 @@
             "name":"Wattson",
             "role":"Static Defender",
             "category":"defense",
-            "legendImage":"",
+            "legendImage":"wattson.jpg",
             "classIcon":"",
             "abilities":[{
                 "passive":"Spark of Genius: Ultimate Accelerants fully charge your Ultimate Ability",
@@ -122,7 +122,7 @@
             "name":"Loba",
             "role":"Translocating Thief",
             "category":"support",
-            "legendImage":"",
+            "legendImage":"loba.jpg",
             "classIcon":"",
             "abilities":[{
                 "passive":"Eye for Quality: Nearby epic and legendary loot can be seen through walls. The range is the same as Black Marke Boutique.",
@@ -135,7 +135,7 @@
             "name":"Mirage",
             "role":"Holographic Trickster",
             "category":"assault",
-            "legendImage":"",
+            "legendImage":"mirage.jpg",
             "classIcon":"",
             "abilities":[{
                 "passive":"Now You See Me...:Automatically cloack when using Respawn Beacons and reviving teammates.",
@@ -148,7 +148,7 @@
             "name":"Horizon",
             "role":"Gravitational Manipulator",
             "category":"assault",
-            "legendImage":"",
+            "legendImage":"horizon.jpg",
             "classIcon":"",
             "abilities":[{
                 "passive":"Spacewalk: Increase air control and reduce fall impacts with Horizon's custom spacesuit.",
@@ -161,7 +161,7 @@
             "name":"Crypto",
             "role":"Surveillance Expert",
             "category":"survey",
-            "legendImage":"",
+            "legendImage":"crypto.jpg",
             "classIcon":"",
             "abilities":[{
                 "passive":"Neurolink: Enemies detected by the Surveillance Drone within 30 meters of your position are marked for you and your teammates to see.",
@@ -171,15 +171,15 @@
         }     
     ,{
             "id":14,
-            "name":"Horizon",
-            "role":"Gravitational Manipulator",
+            "name":"Fuse",
+            "role":"Bombastic Explosive Expert",
             "category":"assault",
-            "legendImage":"",
+            "legendImage":"fuse.jpg",
             "classIcon":"",
             "abilities":[{
-                "passive":"Spacewalk: Increase air control and reduce fall impacts with Horizon's custom spacesuit.",
-                "tactical":"Gravity Lift: Reverses the flow of gravity, lifting players upwards and boosting them outward when they exit.",
-                "ultimate":"Black Hole: Deploy N.E.W.T to create a micro black hole that pulls players in towards it, and hits them with a graviton blast at the end."
+                "passive":"Grenadier: Stack an etra grenade per inventory slot. Fire grenades farther, faster, and more accurately.",
+                "tactical":"Knuckle Cluster: Launch a cluster bomb that continuosly expels airbust explosives on impact.",
+                "ultimate":"The Motherlode: Launch a bombardment that encircles a target area in a wall of flame."
                 }]
         }     
     ,{
@@ -187,7 +187,7 @@
             "name":"Ash",
             "role":"Incisive Instigator",
             "category":"assault",
-            "legendImage":"",
+            "legendImage":"ash.jpg",
             "classIcon":"",
             "abilities":[{
                 "passive":"Marked For Death: Ash's map shows the location of recent deathboxes and marks surviving attackers",
@@ -200,7 +200,7 @@
             "name":"Revenant",
             "role":"Synthetic Nightmare",
             "category":"assault",
-            "legendImage":"",
+            "legendImage":"revenant.jpg",
             "classIcon":"",
             "abilities":[{
                 "passive":"Stalker: You crouch walk faster and can climb higher than other Legends.",
@@ -211,9 +211,9 @@
     ,{
             "id":17,
             "name":"Valkyrie",
-            "role":"Synthetic Nightmare",
+            "role":"Winged Avenger",
             "category":"assault",
-            "legendImage":"",
+            "legendImage":"valk.jpg",
             "classIcon":"",
             "abilities":[{
                 "passive":"VTOL Jets: Use jetpacks to fly. Fuel is limited but refills overtime.",
@@ -226,7 +226,7 @@
             "name":"Mad Maggie",
             "role":"Rebel Warlord",
             "category":"assault",
-            "legendImage":"",
+            "legendImage":"maggie.jpg",
             "classIcon":"",
             "abilities":[{
                 "passive":"Warlord's Ire: Temporarily highlight enemies you've damaged, and move faster with a shotgun.",
@@ -239,7 +239,7 @@
             "name":"Seer",
             "role":"Ambush Artist",
             "category":"survey",
-            "legendImage":"",
+            "legendImage":"seer.jpg",
             "classIcon":"",
             "abilities":[{
                 "passive":"Heart Seeker: Hear and visualize the heartbeats of nearby enemies when aiming down sights.",
@@ -252,7 +252,7 @@
             "name":"Vantage",
             "role":"Sniper Savant",
             "category":"assault",
-            "legendImage":"",
+            "legendImage":"vantage.jpg",
             "classIcon":"",
             "abilities":[{
                 "passive":"Spotter's Lens: Aim down sights to scount with your eyepiece( unarmed or with mid-to long rance scopes) and use a bullet drop indicator to see where your shots will land",
@@ -265,7 +265,7 @@
             "name":"Rampart",
             "role":"Amped Modder",
             "category":"defense",
-            "legendImage":"",
+            "legendImage":"rampart.jpg",
             "classIcon":"",
             "abilities":[{
                 "passive":"Modded Loader: Increased magazine capacity and faster reloards when using LMGs and Minigun",
@@ -278,7 +278,7 @@
             "name":"New Castle",
             "role":"Heroic Defender",
             "category":"defense",
-            "legendImage":"",
+            "legendImage":"castle.jpg",
             "classIcon":"",
             "abilities":[{
                 "passive":"Retrieve the Wounded: Drag downed allies as you revive and protect them with your revive shield.",
