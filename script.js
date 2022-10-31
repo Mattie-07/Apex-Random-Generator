@@ -10,9 +10,11 @@ let legendPicked;
 let markupArrayOfLegends = "";
 const legend = document.querySelectorAll(".legend");
 let newLegendArray = [];
+const legendBox = document.querySelector("#legendBox");
 
 fetch(apexUrl).then((response) =>
   response.json().then((data) => {
+    console.log(data.legends);
     data.legends.forEach((legend) => {
       const element = `
       <div onclick="legendClicked(this)" id="${legend.id}" class="legend">
@@ -28,8 +30,15 @@ fetch(apexUrl).then((response) =>
         </div>
       </div>
       `;
+
       markupArrayOfLegends = markupArrayOfLegends + element;
     });
+    const myLegend = `
+    <div class="innerLegendBox">
+      <span>The Legend you chose is ${data.legends} </span>
+  </div>
+`;
+    legendBox.innerHTML = myLegend;
     apexGrid.innerHTML = markupArrayOfLegends;
   })
 );
