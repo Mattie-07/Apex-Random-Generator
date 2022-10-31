@@ -1,0 +1,11 @@
+-   Add Readme
+
+-   Add backend( either with Mongo or with AWS)
+
+-   Add Login
+
+-   Fix Navigation
+
+-   Use the API from the Apex website and try to find another to use too.
+
+-   Display the correct legend upon clicks

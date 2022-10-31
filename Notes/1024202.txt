@@ -1,1 +1,3 @@
 Instead of using thos janky icons that i found on the internet, I could instead use the ones from font-awesome. Those would have a uniform look and in the end, it would be alot cleaner too.
+
+Idk what happend but Font awesome locked me out of my damn account. I'm going to have to try again because the last time, I had no idea what to do even AFTER resestting my password. 
