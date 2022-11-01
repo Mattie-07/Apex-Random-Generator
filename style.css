@@ -45,6 +45,11 @@ body{
     z-index:1;
 }
 
+.items li{
+    cursor:pointer;
+    margin:0rem 3rem;
+
+}
 
 .navbar .logo, .navbar .items{
     color:white;
@@ -59,6 +64,13 @@ body{
     align-items: center;
     
 }
+
+.logo li a{
+    color:white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 
 .buttonDiv button{
     height:50px;
@@ -110,6 +122,7 @@ div.legend img{
     max-width: 100%;
     position: relative;
     opacity: 0.4;
+    cursor: pointer;
 }
 
 
@@ -159,12 +172,12 @@ div.legend.blue{
 
 
 div.legend img{
-    opacity: .7;
+    opacity: .6;
 }
 
 div.legend:hover img{
     opacity:1;
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
 } 
 
 .apexGrid .legend{
@@ -245,8 +258,8 @@ div.legend.hover h2{
 
 .legendInfo:hover{
     background-color: white;
-    margin-top:0rem;
-    padding-bottom:8rem;
+    /* margin-top:0rem;
+    padding-bottom:8rem; */
 
 }
 
