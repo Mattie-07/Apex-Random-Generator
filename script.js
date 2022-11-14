@@ -39,12 +39,7 @@ fetch(apexUrl).then((response) =>
       `;
       markupArrayOfLegends = markupArrayOfLegends + element;
     });
-    const myLegend = `
-    <div class="innerLegendBox">
-      <span>The Legend you chose is ${data} </span>
-  </div>
-`;
-    legendBox.innerHTML = myLegend;
+
     apexGrid.innerHTML = markupArrayOfLegends;
   })
 );
@@ -64,6 +59,7 @@ function legendClicked() {
       }
 
       newLegendArray = legendsPicks;
+      console.log(newLegendArray)
     });
   }
 }
@@ -71,14 +67,20 @@ function legendClicked() {
 function randomLegend() {
   randomButton.addEventListener("click", (e) => {
     var legendPicked = Math.floor(Math.random() * newLegendArray.length);
+    var value = newLegendArray[legendPicked]
+    console.log(value)
+    console.log(legendPicked)
     document.getElementById("legendBox").style.display = "flex";
-    // fetch(apexUrl).then((response) =>
-    //   response.json().then((data) => {
-    //     console.log(data.legends);
-    //     // console.log("The legend that you picked is", newLegendArray);
-    //     // //testing
-    //   })
-    // );
+    fetch(apexUrl).then((response) =>
+      response.json().then((data) => {
+        const myLegend = `
+        <div class="innerLegendBox">
+          <span>The Legend you chose is ${data.legends[value - 1].name} </span>
+        </div>
+    `;
+        legendBox.innerHTML = myLegend;
+      })
+    );
   });
 }
 randomLegend();
