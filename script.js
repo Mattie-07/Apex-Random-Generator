@@ -16,6 +16,13 @@ fetch(apexUrl).then((response) =>
   response.json().then((data) => {
     console.log(data.legends);
     data.legends.forEach((legend) => {
+      var result = JSON.stringify(legend.abilities[0].passive);
+      var passiveString = result.substring(1, result.length - 1);
+      var tacticalResult = JSON.stringify(legend.abilities[0].tactical);
+      var tacticalString = tacticalResult.substring(
+        1,
+        tacticalResult.length - 1
+      );
       const element = `
       <div onclick="legendClicked(this)" id="${legend.id}" class="legend">
         <img class="legendStyle" data-id="${legend.id}" src="assets/${legend.legendImage}" alt="" />
@@ -25,8 +32,8 @@ fetch(apexUrl).then((response) =>
                 <h2 class="legendName">${legend.name}</h2>
                 <h4 id="legendRole">${legend.role} </span>
             </div>
-            <p id="legendDescription">Info</p>
-            <p id="legendDescriptionDisplay">Testing</p>
+            <p id="legendDescription">${passiveString}</p>
+            <p id="legendDescriptionDisplay">${tacticalString}</p>
         </div>
       </div>
       `;
@@ -77,3 +84,10 @@ function randomLegend() {
 randomLegend();
 // document.querySelector("#legendDescription").innerText =
 //   data.legends[0].role;
+const observer = new PerformanceObserver((list) => {
+  console.log("Long Task detected! 🚩️");
+  const entries = list.getEntries();
+  console.log(entries);
+});
+
+observer.observe({ entryTypes: ["longtask"] });
