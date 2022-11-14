@@ -1,0 +1,3 @@
+Ok, It's been awhile since I've acutally built anything on this site but I need to go ahead and convert this, again. to Reach in order for me to make sure that my skills are going to be up to par when its time for me to take tests or to express my thought process when using that framework.
+I could do that or I could build the whole thing initally with js and then after convert it to React. 
+I think I will continue to build for right now and see where that takes me.

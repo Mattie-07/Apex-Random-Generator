@@ -1,0 +1,19 @@
+h1 {
+    color: black;
+}
+
+.aboutMatthew {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+.aboutMeText {
+    width: 35%;
+}
+
+iframe {
+    margin-top: 5rem;
+}
