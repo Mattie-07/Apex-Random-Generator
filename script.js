@@ -8,6 +8,7 @@ const legendContainer = document.querySelector(".titleRole");
 const apexGrid = document.querySelector(".apexGrid");
 let legendPicked;
 let markupArrayOfLegends = "";
+const box = document.querySelector(".box")
 const legend = document.querySelectorAll(".legend");
 let newLegendArray = [];
 const legendBox = document.querySelector("#legendBox");
@@ -59,7 +60,16 @@ function legendClicked() {
       }
       fetch(apexUrl).then((response) =>
       response.json().then((data) => {
+        let numba = parseInt(legendsPicks)
         console.log(data.legends)
+        console.log(legendsPicks)
+        const insideLegendBox = `
+          <span>
+            ${data.legends[numba - 1].name}
+          </span>
+        `
+        box.innerHTML = insideLegendBox;
+  
     ;}))
       newLegendArray = legendsPicks;
       console.log(newLegendArray)
@@ -87,8 +97,7 @@ function randomLegend() {
   });
 }
 randomLegend();
-// document.querySelector("#legendDescription").innerText =
-//   data.legends[0].role;
+
 const observer = new PerformanceObserver((list) => {
   console.log("Long Task detected! 🚩️");
   const entries = list.getEntries();

@@ -30,13 +30,13 @@ body {
 }
 
 .box {
-    height: 200px;
-    width: 200px;
+    height: 400px;
+    width: 260px;
     position: fixed;
     right: 0;
     margin: 4rem;
     border: 1px solid black;
-
+    border-radius: 10px;
 }
 
 
