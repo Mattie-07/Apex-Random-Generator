@@ -57,7 +57,10 @@ function legendClicked() {
       } else {
         legendsPicks.splice(selectedLegend, 1);
       }
-
+      fetch(apexUrl).then((response) =>
+      response.json().then((data) => {
+        console.log(data.legends)
+    ;}))
       newLegendArray = legendsPicks;
       console.log(newLegendArray)
     });
