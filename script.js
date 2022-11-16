@@ -6,6 +6,7 @@ const randomButton = document.getElementById("randomButton");
 const theName = document.querySelector(".legendName");
 const legendContainer = document.querySelector(".titleRole");
 const apexGrid = document.querySelector(".apexGrid");
+const legendInBox = [];
 let legendPicked;
 let markupArrayOfLegends = "";
 const box = document.querySelector(".box")
@@ -25,7 +26,7 @@ fetch(apexUrl).then((response) =>
         tacticalResult.length - 1
       );
       const element = `
-      <div onclick="legendClicked(this)" id="${legend.id}" class="legend">
+      <div id="${legend.id}" class="legend">
         <img class="legendStyle" data-id="${legend.id}" src="assets/${legend.legendImage}" alt="" />
         <div class="legendInfo">
             <img src="assets/${legend.classIcon}" alt="">
@@ -40,42 +41,48 @@ fetch(apexUrl).then((response) =>
       `;
       markupArrayOfLegends = markupArrayOfLegends + element;
     });
-
     apexGrid.innerHTML = markupArrayOfLegends;
+    const legend = document.querySelectorAll(".legend");
+    for (const legends of legend) {
+      legends.addEventListener("click", (e) => {
+        console.log(e.target)
+        const legendDiv = e.target.closest("img");
+        const selectedLegegend = e.target.closest("div");
+        selectedLegegend.classList.toggle("selected");
+        const selectedLegend = legendsPicks.indexOf(legendDiv.dataset.id);
+        if (selectedLegend === -1) {
+          legendsPicks.push(legendDiv.dataset.id);
+          add(legendDiv.dataset.id);
+        } else {
+          legendsPicks.splice(selectedLegend, 1);
+          remove()
+        }
+        newLegendArray = legendsPicks;
+      });
+    }
   })
 );
 
-function legendClicked() {
-  const legend = document.querySelectorAll(".legend");
-  for (const legends of legend) {
-    legends.addEventListener("click", (e) => {
-      const legendDiv = e.target.closest("img");
-      const selectedLegegend = e.target.closest("div");
-      selectedLegegend.classList.toggle("selected");
-      const selectedLegend = legendsPicks.indexOf(legendDiv.dataset.id);
-      if (selectedLegend === -1) {
-        legendsPicks.push(legendDiv.dataset.id);
-      } else {
-        legendsPicks.splice(selectedLegend, 1);
-      }
-      fetch(apexUrl).then((response) =>
-      response.json().then((data) => {
-        let numba = parseInt(legendsPicks)
-        console.log(data.legends)
-        console.log(legendsPicks)
-        const insideLegendBox = `
-          <span>
-            ${data.legends[numba - 1].name}
-          </span>
-        `
-        box.innerHTML = insideLegendBox;
-  
-    ;}))
-      newLegendArray = legendsPicks;
-      console.log(newLegendArray)
-    });
-  }
-}
+// function legendClicked() {
+//   const legend = document.querySelectorAll(".legend");
+//   for (const legends of legend) {
+//     legends.addEventListener("click", (e) => {
+//       console.log(e.target)
+//       const legendDiv = e.target.closest("img");
+//       const selectedLegegend = e.target.closest("div");
+//       selectedLegegend.classList.toggle("selected");
+//       const selectedLegend = legendsPicks.indexOf(legendDiv.dataset.id);
+//       if (selectedLegend === -1) {
+//         legendsPicks.push(legendDiv.dataset.id);
+//         add(legendDiv.dataset.id);
+//       } else {
+//         legendsPicks.splice(selectedLegend, 1);
+//         remove()
+//       }
+//       newLegendArray = legendsPicks;
+//     });
+//   }
+// }
 
 function randomLegend() {
   randomButton.addEventListener("click", (e) => {
@@ -98,6 +105,17 @@ function randomLegend() {
 }
 randomLegend();
 
+function add (x){
+  fetch(apexUrl).then((response) =>
+  response.json().then((data) => {
+    // console.log(data.theLegend[`${theLegend.id}`].name)
+    legendInBox.push(data.legends[x - 1].name)
+    console.log(legendInBox)
+    console.log(x)
+  }))
+}
+
+
 const observer = new PerformanceObserver((list) => {
   console.log("Long Task detected! 🚩️");
   const entries = list.getEntries();
@@ -105,3 +123,14 @@ const observer = new PerformanceObserver((list) => {
 });
 
 observer.observe({ entryTypes: ["longtask"] });
+
+
+      // console.log(legendInBox)
+
+
+        // const insideLegendBox = `
+        //   <span>
+        //     ${data.legends[numba - 1].name}
+        //   </span>
+        // `
+        // box.innerHTML = insideLegendBox;
