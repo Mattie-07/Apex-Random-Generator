@@ -14,6 +14,7 @@ const legend = document.querySelectorAll(".legend");
 let newLegendArray = [];
 const legendBox = document.querySelector("#legendBox");
 
+
 fetch(apexUrl).then((response) =>
   response.json().then((data) => {
     console.log(data.legends);
@@ -45,7 +46,6 @@ fetch(apexUrl).then((response) =>
     const legend = document.querySelectorAll(".legend");
     for (const legends of legend) {
       legends.addEventListener("click", (e) => {
-        console.log(e.target)
         const legendDiv = e.target.closest("img");
         const selectedLegegend = e.target.closest("div");
         selectedLegegend.classList.toggle("selected");
@@ -108,10 +108,13 @@ randomLegend();
 function add (x){
   fetch(apexUrl).then((response) =>
   response.json().then((data) => {
-    // console.log(data.theLegend[`${theLegend.id}`].name)
     legendInBox.push(data.legends[x - 1].name)
-    console.log(legendInBox)
-    console.log(x)
+    const insideLegendBox = `
+    <span>
+      ${legendInBox}
+    </span>
+  `
+    box.innerHTML = insideLegendBox 
   }))
 }
 
@@ -125,12 +128,4 @@ const observer = new PerformanceObserver((list) => {
 observer.observe({ entryTypes: ["longtask"] });
 
 
-      // console.log(legendInBox)
 
-
-        // const insideLegendBox = `
-        //   <span>
-        //     ${data.legends[numba - 1].name}
-        //   </span>
-        // `
-        // box.innerHTML = insideLegendBox;

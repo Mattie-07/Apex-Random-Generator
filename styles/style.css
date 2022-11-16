@@ -221,7 +221,8 @@ div.legend:hover img {
     border-radius: .5rem;
     outline-offset: calc(var(--gap) * 0.2);
     outline: 4px solid transparent;
-    transition: all .3s ease-in-out
+    transition: all .3s ease-in-out;
+    box-shadow: 9px 7px 15px grey
 }
 
 .apexGrid .legend.selected {
