@@ -55,7 +55,8 @@ fetch(apexUrl).then((response) =>
           add(legendDiv.dataset.id);
         } else {
           legendsPicks.splice(selectedLegend, 1);
-          remove()
+          legendInBox.splice(selectedLegend, 1)
+          console.log(legendInBox)
         }
         newLegendArray = legendsPicks;
       });
@@ -84,6 +85,16 @@ fetch(apexUrl).then((response) =>
 //   }
 // }
 
+const btn = document.querySelector('button')
+function randomGenerator(number){
+  return Math.floor(Math.random() * (number + 1))
+}
+btn.addEventListener('click' ,() => {
+  const randomColor = `rgb(${randomGenerator(255)}, ${randomGenerator(255)}, ${randomGenerator(255)})`
+
+})
+
+
 function randomLegend() {
   randomButton.addEventListener("click", (e) => {
     var legendPicked = Math.floor(Math.random() * newLegendArray.length);
@@ -108,6 +119,10 @@ randomLegend();
 function add (x){
   fetch(apexUrl).then((response) =>
   response.json().then((data) => {
+    // if(legendCheck != -1){
+    //   legendInBox.splice(legendCheck, 1)
+    //   console.log("it works")
+    // }
     legendInBox.push(data.legends[x - 1].name)
     const insideLegendBox = `
     <span>
@@ -115,7 +130,8 @@ function add (x){
     </span>
   `
     box.innerHTML = insideLegendBox 
-  }))
+    }))
+  
 }
 
 

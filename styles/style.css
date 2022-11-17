@@ -222,7 +222,7 @@ div.legend:hover img {
     outline-offset: calc(var(--gap) * 0.2);
     outline: 4px solid transparent;
     transition: all .3s ease-in-out;
-    box-shadow: 9px 7px 15px grey
+    box-shadow: 11px 7px 15px grey
 }
 
 .apexGrid .legend.selected {
@@ -267,6 +267,7 @@ div.legend.hover h2 {
 .legendInfo:hover p {
     display: block;
     color: black;
+
 }
 
 
@@ -303,9 +304,14 @@ div.legend.hover h2 {
     background-color: white;
     display: flex;
     flex-direction: column;
+    padding-top: 2rem;
     /* margin-top:0rem;
     padding-bottom:8rem; */
 
+}
+
+.legendInfo:hover h4 {
+    display: none;
 }
 
 .legendInfo:hover p {
