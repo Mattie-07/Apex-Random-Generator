@@ -146,4 +146,22 @@ const observer = new PerformanceObserver((list) => {
 observer.observe({ entryTypes: ["longtask"] });
 
 
-
+//below is code for having their be a soudn when their is a hover over:
+      // legends.addEventListener('mouseover', () =>{
+      //   [].forEach.call(audios,function(audio){
+      //     audio.play();
+      //   })
+      // },false)
+      // legends.addEventListener('mouseleave', function() {
+      //   clicking.pause();
+      //   clicking.currentTime = 0;
+      // }, false);
+      
+      // legends.addEventListener('mouseover', function() {
+      //   clicking.play();
+      // }, false);
+      
+      // legends.addEventListener('mouseleave', function() {
+      //   clicking.pause();
+      //   clicking.currentTime = 0;
+      // }, false);

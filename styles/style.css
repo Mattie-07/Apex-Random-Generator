@@ -298,6 +298,8 @@ div.legend.hover h2 {
     transition: all .5s;
     padding-bottom: 2rem;
     align-items: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
 }
 
 .legendInfo:hover {
