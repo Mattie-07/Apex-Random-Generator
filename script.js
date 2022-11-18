@@ -44,6 +44,7 @@ fetch(apexUrl).then((response) =>
     });
     apexGrid.innerHTML = markupArrayOfLegends;
     const legend = document.querySelectorAll(".legend");
+    var audios = document.querySelectorAll('audio')
     for (const legends of legend) {
       legends.addEventListener("click", (e) => {
         const legendDiv = e.target.closest("img");
@@ -60,6 +61,7 @@ fetch(apexUrl).then((response) =>
         }
         newLegendArray = legendsPicks;
       });
+
     }
   })
 );
@@ -89,9 +91,9 @@ const btn = document.querySelector('button')
 function randomGenerator(number){
   return Math.floor(Math.random() * (number + 1))
 }
-btn.addEventListener('click' ,() => {
+btn.addEventListener('mouseover' ,() => {
   const randomColor = `rgb(${randomGenerator(255)}, ${randomGenerator(255)}, ${randomGenerator(255)})`
-
+  document.body.style.backgroundColor = randomColor;
 })
 
 
