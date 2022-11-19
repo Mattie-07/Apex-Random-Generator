@@ -57,9 +57,10 @@ fetch(apexUrl).then((response) =>
         } else {
           legendsPicks.splice(selectedLegend, 1);
           legendInBox.splice(selectedLegend, 1)
-          remove();
+          remove(selectedLegend);
           console.log(legendInBox)
         }
+
         newLegendArray = legendsPicks;
       });
 
@@ -122,12 +123,7 @@ randomLegend();
 function add (x){
   fetch(apexUrl).then((response) =>
   response.json().then((data) => {
-    // if(legendCheck != -1){
-    //   legendInBox.splice(legendCheck, 1)
-    //   console.log("it works")
-    // }
     legendInBox.push(data.legends[x - 1].name)
-
     var insideLegendBox = `
     <li>
       ${legendInBox}
@@ -138,9 +134,13 @@ function add (x){
     }))
   
 }
-function remove(){
-
-  box.innerHTML
+function remove(x){
+  console.log(x)
+  var insideLegendBox =`
+    <li>
+      ${legendInBox}
+    </li>`
+    box.innerHTML += insideLegendBox
 }
 
 
