@@ -57,6 +57,7 @@ fetch(apexUrl).then((response) =>
         } else {
           legendsPicks.splice(selectedLegend, 1);
           legendInBox.splice(selectedLegend, 1)
+          remove();
           console.log(legendInBox)
         }
         newLegendArray = legendsPicks;
@@ -91,9 +92,9 @@ const btn = document.querySelector('button')
 function randomGenerator(number){
   return Math.floor(Math.random() * (number + 1))
 }
-btn.addEventListener('mouseover' ,() => {
+btn.addEventListener('click' ,(e) => {
   const randomColor = `rgb(${randomGenerator(255)}, ${randomGenerator(255)}, ${randomGenerator(255)})`
-  document.body.style.backgroundColor = randomColor;
+  e.target.style.backgroundColor = randomColor;
 })
 
 
@@ -126,14 +127,20 @@ function add (x){
     //   console.log("it works")
     // }
     legendInBox.push(data.legends[x - 1].name)
-    const insideLegendBox = `
-    <span>
+
+    var insideLegendBox = `
+    <li>
       ${legendInBox}
-    </span>
+    </li>
   `
-    box.innerHTML = insideLegendBox 
+    console.log(legendInBox)
+    box.innerHTML += insideLegendBox 
     }))
   
+}
+function remove(){
+
+  box.innerHTML
 }
 
 

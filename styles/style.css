@@ -38,11 +38,31 @@ body {
     margin: 4rem;
     border: 1px solid black;
     border-radius: 10px;
-    padding: 2rem;
+    padding: 0rem 0rem 2rem 0rem;
+    background-color: #71677C;
+    box-shadow: 11px 7px 15px grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 .box span {
     margin: 2rem;
+}
+
+.topPortion {
+    border: 1px solid black;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.box li {
+    text-decoration: none;
+    list-style: none
 }
 
 #legendBox {
@@ -320,6 +340,7 @@ div.legend.hover h2 {
     margin-bottom: 1rem;
 
 }
+
 
 
 
