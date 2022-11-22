@@ -19,10 +19,10 @@ fetch(apexUrl).then((response) =>
   response.json().then((data) => {
     console.log(data.legends);
     data.legends.forEach((legend) => {
-      var result = JSON.stringify(legend.abilities[0].passive);
-      var passiveString = result.substring(1, result.length - 1);
-      var tacticalResult = JSON.stringify(legend.abilities[0].tactical);
-      var tacticalString = tacticalResult.substring(
+      let result = JSON.stringify(legend.abilities[0].passive);
+      let passiveString = result.substring(1, result.length - 1);
+      let tacticalResult = JSON.stringify(legend.abilities[0].tactical);
+      let tacticalString = tacticalResult.substring(
         1,
         tacticalResult.length - 1
       );
@@ -44,7 +44,7 @@ fetch(apexUrl).then((response) =>
     });
     apexGrid.innerHTML = markupArrayOfLegends;
     const legend = document.querySelectorAll(".legend");
-    var audios = document.querySelectorAll('audio')
+    let audios = document.querySelectorAll('audio')
     for (const legends of legend) {
       legends.addEventListener("click", (e) => {
         const legendDiv = e.target.closest("img");
@@ -101,8 +101,8 @@ btn.addEventListener('click' ,(e) => {
 
 function randomLegend() {
   randomButton.addEventListener("click", (e) => {
-    var legendPicked = Math.floor(Math.random() * newLegendArray.length);
-    var value = newLegendArray[legendPicked]
+    let legendPicked = Math.floor(Math.random() * newLegendArray.length);
+    let value = newLegendArray[legendPicked]
     console.log(value)
     console.log(legendPicked)
     document.getElementById("legendBox").style.display = "flex";
@@ -124,7 +124,7 @@ function add (x){
   fetch(apexUrl).then((response) =>
   response.json().then((data) => {
     legendInBox.push(data.legends[x - 1].name)
-    var insideLegendBox = `
+    let insideLegendBox = `
     <li>
       ${legendInBox}
     </li>
@@ -136,7 +136,7 @@ function add (x){
 }
 function remove(x){
   console.log(x)
-  var insideLegendBox =`
+  let insideLegendBox =`
     <li>
       ${legendInBox}
     </li>`
