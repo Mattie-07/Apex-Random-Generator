@@ -1,1 +1,5 @@
 The site is really starting to come together! There are a few things I need to do on the functionality side in order for it to be perfect on the front page and then when I do that I should be ok to start working on the backend. I need to do a bit more research on the internet before I go asking questions but I feel like I'm so close! I didn't actually contribute anything significant to the project today but just keeping it up and having writing notes about it just helps me not forget and to continue to work and improve on it
+
+So it seems that environment variables are used for thirdparty applications 
+
+Remember that when using try and catch that the fucntion is going to have to be async. Try and catch are async functions so async would need to be in the beginning of the function in order for it to excute
