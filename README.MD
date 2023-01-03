@@ -5,7 +5,7 @@
 ## Table of Contents
 
 ## How to install and run the Project
-Once the project is complete, the user should be able to clone the repo in their own local environment and then view it on their machine. Still, a work in progress
+Once the project is complete, the user should be able to clone the repo in their own local environment and then view it on their machine. Still, a work in progress.
 
 How To Use the project
 
