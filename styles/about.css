@@ -17,3 +17,84 @@ h1 {
 iframe {
     margin-top: 5rem;
 }
+
+
+.progrssContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+.progress-barContainer{
+    width:270px;
+    height:25px;
+    display:inline-flex;
+    align-items:center;
+    position: relative;
+}
+
+.circleOne, .circleTwo{
+    height: 45px;
+    width: 45px;
+    border-radius: 24px;
+    position: absolute;
+}
+.circleOne{
+    background-color:#19AEE1;
+    left:0;
+}
+
+
+/* */
+.circleTwo {
+    background: gray;
+    right: 0;
+    border: 3px solid gray;
+    background-color: white;
+}
+
+
+.circleLine{
+    height:2px;
+    width:100%;
+    background-color:gray;
+}
+.progressText, .progressText2{
+    padding:0rem;
+    font-size: 10px;
+    list-style: none;
+    display:flex;
+    justify-content:space-between;
+    margin-top:.5rem;
+}
+
+
+.progressText > li:first-child{
+    position: relative;
+    left: -96px;
+    font-size: 18px;
+    text-transform: uppercase
+}
+
+.progressText > li:not(:first-child){
+    position: relative;
+    right: 53px;
+    font-size: 18px;
+    text-transform: uppercase
+}
+
+.progressText2 > li:first-child{
+    position: relative;
+    left: -39px;
+    font-size: 18px;
+    text-transform: uppercase
+}
+
+.progressText2 > li:not(:first-child){
+    position: relative;
+    right: -28px;
+    font-size: 18px;
+    text-transform: uppercase
+}
