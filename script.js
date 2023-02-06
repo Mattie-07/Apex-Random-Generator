@@ -6,14 +6,13 @@ const randomButton = document.getElementById("randomButton");
 const theName = document.querySelector(".legendName");
 const legendContainer = document.querySelector(".titleRole");
 const apexGrid = document.querySelector(".apexGrid");
-const legendInBox = [];
+let legendInBox = [];
 let legendPicked;
 let markupArrayOfLegends = "";
-const box = document.querySelector(".box")
-const legend = document.querySelectorAll(".legend");
+const box = document.querySelector(".boxText");
+let legend = document.querySelectorAll(".legend");
 let newLegendArray = [];
 const legendBox = document.querySelector("#legendBox");
-
 
 fetch(apexUrl).then((response) =>
   response.json().then((data) => {
@@ -44,7 +43,7 @@ fetch(apexUrl).then((response) =>
     });
     apexGrid.innerHTML = markupArrayOfLegends;
     const legend = document.querySelectorAll(".legend");
-    let audios = document.querySelectorAll('audio')
+    let audios = document.querySelectorAll("audio");
     for (const legends of legend) {
       legends.addEventListener("click", (e) => {
         const legendDiv = e.target.closest("img");
@@ -52,18 +51,25 @@ fetch(apexUrl).then((response) =>
         selectedLegegend.classList.toggle("selected");
         const selectedLegend = legendsPicks.indexOf(legendDiv.dataset.id);
         if (selectedLegend === -1) {
+          box.innerHTML = "";
           legendsPicks.push(legendDiv.dataset.id);
           add(legendDiv.dataset.id);
         } else {
           legendsPicks.splice(selectedLegend, 1);
-          legendInBox.splice(selectedLegend, 1)
-          remove(selectedLegend);
-          console.log(legendInBox)
+          legendInBox.splice(selectedLegend, 1);
+          box.innerHTML = "";
+          legendInBox.forEach((legend) => {
+            box.innerHTML += `
+    <li>
+      ${legend}
+    </li>`;
+          });
+
+          console.log(legendInBox);
         }
 
         newLegendArray = legendsPicks;
       });
-
     }
   })
 );
@@ -89,22 +95,23 @@ fetch(apexUrl).then((response) =>
 //   }
 // }
 
-const btn = document.querySelector('button')
-function randomGenerator(number){
-  return Math.floor(Math.random() * (number + 1))
+const btn = document.querySelector("button");
+function randomGenerator(number) {
+  return Math.floor(Math.random() * (number + 1));
 }
-btn.addEventListener('click' ,(e) => {
-  const randomColor = `rgb(${randomGenerator(255)}, ${randomGenerator(255)}, ${randomGenerator(255)})`
+btn.addEventListener("click", (e) => {
+  const randomColor = `rgb(${randomGenerator(255)}, ${randomGenerator(
+    255
+  )}, ${randomGenerator(255)})`;
   e.target.style.backgroundColor = randomColor;
-})
-
+});
 
 function randomLegend() {
   randomButton.addEventListener("click", (e) => {
     let legendPicked = Math.floor(Math.random() * newLegendArray.length);
-    let value = newLegendArray[legendPicked]
-    console.log(value)
-    console.log(legendPicked)
+    let value = newLegendArray[legendPicked];
+    console.log(value);
+    console.log(legendPicked);
     document.getElementById("legendBox").style.display = "flex";
     fetch(apexUrl).then((response) =>
       response.json().then((data) => {
@@ -120,29 +127,36 @@ function randomLegend() {
 }
 randomLegend();
 
-function add (x){
+function add(x) {
   fetch(apexUrl).then((response) =>
-  response.json().then((data) => {
-    legendInBox.push(data.legends[x - 1].name)
-    let insideLegendBox = `
-    <li>
-      ${legendInBox}
-    </li>
-  `
-    console.log(legendInBox)
-    box.innerHTML += insideLegendBox 
-    }))
-  
-}
-function remove(x){
-  console.log(x)
-  let insideLegendBox =`
-    <li>
-      ${legendInBox}
-    </li>`
-    box.innerHTML += insideLegendBox
-}
+    response.json().then((data) => {
+      let legend = data.legends[x - 1].name;
+      legendInBox = [...legendInBox, legend];
+      let insideLegendBox = legendInBox
+        .map(
+          (item) => `
+          <li>
+          ${item}
+          </li>
+        `
+        )
+        .join("");
 
+      console.log(legendInBox);
+      box.innerHTML += insideLegendBox;
+    })
+  );
+}
+function remove(legend) {
+  const legendList = document.getElementById("legend-list");
+  const legendElements = legendList.getElementsByClassName("legend");
+  for (let i = 0; i < legendElements.length; i++) {
+    if (legendElements[i].textContent === legend) {
+      legendList.removeChild(legendElements[i]);
+      break;
+    }
+  }
+}
 
 const observer = new PerformanceObserver((list) => {
   console.log("Long Task detected! 🚩️");
@@ -152,23 +166,22 @@ const observer = new PerformanceObserver((list) => {
 
 observer.observe({ entryTypes: ["longtask"] });
 
-
 //below is code for having their be a soudn when their is a hover over:
-      // legends.addEventListener('mouseover', () =>{
-      //   [].forEach.call(audios,function(audio){
-      //     audio.play();
-      //   })
-      // },false)
-      // legends.addEventListener('mouseleave', function() {
-      //   clicking.pause();
-      //   clicking.currentTime = 0;
-      // }, false);
-      
-      // legends.addEventListener('mouseover', function() {
-      //   clicking.play();
-      // }, false);
-      
-      // legends.addEventListener('mouseleave', function() {
-      //   clicking.pause();
-      //   clicking.currentTime = 0;
-      // }, false);
+// legends.addEventListener('mouseover', () =>{
+//   [].forEach.call(audios,function(audio){
+//     audio.play();
+//   })
+// },false)
+// legends.addEventListener('mouseleave', function() {
+//   clicking.pause();
+//   clicking.currentTime = 0;
+// }, false);
+
+// legends.addEventListener('mouseover', function() {
+//   clicking.play();
+// }, false);
+
+// legends.addEventListener('mouseleave', function() {
+//   clicking.pause();
+//   clicking.currentTime = 0;
+// }, false);
