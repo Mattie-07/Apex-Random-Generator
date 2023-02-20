@@ -34,7 +34,7 @@
             "id": 3,
             "name": "Octane",
             "role": "Speed Daredevil",
-            "category": "assault",
+            "category": "skirmisher",
             "legendImage": "octane.jpg",
             "classIcon": "offenseImage.jpg",
             "abilities": [
@@ -49,7 +49,7 @@
             "id": 4,
             "name": "Gibraltar",
             "role": "Shielded Fortress",
-            "category": "defense",
+            "category": "support",
             "legendImage": "gibby.jpg",
             "classIcon": "defenseImage.jpg",
             "abilities": [
@@ -79,7 +79,7 @@
             "id": 6,
             "name": "Pathfinder",
             "role": "Forward Scout",
-            "category": "recon",
+            "category": "skirmisher",
             "legendImage": "path.jpg",
             "classIcon": "recon.jpg",
             "abilities": [
@@ -94,7 +94,7 @@
             "id": 7,
             "name": "Wraith",
             "role": "Interdimensional Skirmisher",
-            "category": "assault",
+            "category": "skirmisher",
             "legendImage": "wraith.jpg",
             "classIcon": "offenseImage.jpg",
             "abilities": [
@@ -109,7 +109,7 @@
             "id": 8,
             "name": "Caustic",
             "role": "Toxic Trapper",
-            "category": "defense",
+            "category": "controller",
             "legendImage": "caustic.jpg",
             "classIcon": "defenseImage.jpg",
             "abilities": [
@@ -124,7 +124,7 @@
             "id": 9,
             "name": "Wattson",
             "role": "Static Defender",
-            "category": "defense",
+            "category": "controller",
             "legendImage": "wattson.jpg",
             "classIcon": "defenseImage.jpg",
             "abilities": [
@@ -154,7 +154,7 @@
             "id": 11,
             "name": "Mirage",
             "role": "Holographic Trickster",
-            "category": "assault",
+            "category": "skirmisher",
             "legendImage": "mirage.jpg",
             "classIcon": "offenseImage.jpg",
             "abilities": [
@@ -169,7 +169,7 @@
             "id": 12,
             "name": "Horizon",
             "role": "Gravitational Manipulator",
-            "category": "assault",
+            "category": "skirmisher",
             "legendImage": "horizon.jpg",
             "classIcon": "offenseImage.jpg",
             "abilities": [
@@ -244,7 +244,7 @@
             "id": 17,
             "name": "Valkyrie",
             "role": "Winged Avenger",
-            "category": "recon",
+            "category": "skirmisher",
             "legendImage": "valk.jpg",
             "classIcon": "recon.jpg",
             "abilities": [
@@ -304,7 +304,7 @@
             "id": 21,
             "name": "Rampart",
             "role": "Amped Modder",
-            "category": "defense",
+            "category": "controller",
             "legendImage": "rampart.jpg",
             "classIcon": "defenseImage.jpg",
             "abilities": [
@@ -319,7 +319,7 @@
             "id": 22,
             "name": "New Castle",
             "role": "Heroic Defender",
-            "category": "defense",
+            "category": "support",
             "legendImage": "castle.jpg",
             "classIcon": "defenseImage.jpg",
             "abilities": [
@@ -334,7 +334,7 @@
             "id": 23,
             "name": "Catalyst",
             "role": "Defensive Conjurer",
-            "category": "defense",
+            "category": "controller",
             "legendImage": "catalyst.jpg",
             "classIcon": "defenseImage.jpg",
             "abilities": [
