@@ -1,2 +1,4 @@
 I actually haven't played Apex in a minute but with the newest update to season 16, what happened is that they actually changed around the classes Completely. So I'll probalby have to go to the webiste - see the description of the new Legend Classes and then readjust what I've made accordingly. I dont think there would be major changes. Just the changes to the Icons, and also the changes to the json file that specifies which Legend is going to belong to which category. I can begin doing some of the research now actually. 
 What they added and changed is big but none of it is tied to what I've done before, in terms of funcitons so yeah this should be interesting. 
+
+Something else I want to add is a little animation to the legends section whenever a legend is picked or removed. Nothing too fancy.

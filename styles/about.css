@@ -99,8 +99,14 @@ iframe {
     text-transform: uppercase
 }
 
+.background-image{
+    background-image:radial-gradient(circle, yellow, orange);
+    height:20px;
+    width:50px;
 
+}
 .container{
+    display:none;
     background-color: #21AD96;
     width: 132px;
     height: 111px;
