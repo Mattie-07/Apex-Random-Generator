@@ -36,7 +36,7 @@
             "role": "Speed Daredevil",
             "category": "skirmisher",
             "legendImage": "octane.jpg",
-            "classIcon": "offenseImage.jpg",
+            "classIcon": "skirmisher.jpg",
             "abilities": [
                 {
                     "passive": "Swift Mend: Automatically restores health overtime.",
@@ -81,7 +81,7 @@
             "role": "Forward Scout",
             "category": "skirmisher",
             "legendImage": "path.jpg",
-            "classIcon": "recon.jpg",
+            "classIcon": "skirmisher.jpg",
             "abilities": [
                 {
                     "passive": "Insider Knowledge: Scan a survey beacon to reveal the ring's next location",
@@ -96,7 +96,7 @@
             "role": "Interdimensional Skirmisher",
             "category": "skirmisher",
             "legendImage": "wraith.jpg",
-            "classIcon": "offenseImage.jpg",
+            "classIcon": "skirmisher.jpg",
             "abilities": [
                 {
                     "passive": "Voices from the Void: A voice warns you when danger approaches. As far as you can tell, it's on your side.",
@@ -111,7 +111,7 @@
             "role": "Toxic Trapper",
             "category": "controller",
             "legendImage": "caustic.jpg",
-            "classIcon": "defenseImage.jpg",
+            "classIcon": "controller.jpg",
             "abilities": [
                 {
                     "passive": "Allows you to see enemies through your gas.",
@@ -126,7 +126,7 @@
             "role": "Static Defender",
             "category": "controller",
             "legendImage": "wattson.jpg",
-            "classIcon": "defenseImage.jpg",
+            "classIcon": "controller.jpg",
             "abilities": [
                 {
                     "passive": "Spark of Genius: Ultimate Accelerants fully charge your Ultimate Ability",
@@ -156,7 +156,7 @@
             "role": "Holographic Trickster",
             "category": "skirmisher",
             "legendImage": "mirage.jpg",
-            "classIcon": "offenseImage.jpg",
+            "classIcon": "skirmisher.jpg",
             "abilities": [
                 {
                     "passive": "Now You See Me...:Automatically cloack when using Respawn Beacons and reviving teammates.",
@@ -171,7 +171,7 @@
             "role": "Gravitational Manipulator",
             "category": "skirmisher",
             "legendImage": "horizon.jpg",
-            "classIcon": "offenseImage.jpg",
+            "classIcon": "skirmisher.jpg",
             "abilities": [
                 {
                     "passive": "Spacewalk: Increase air control and reduce fall impacts with Horizon's custom spacesuit.",
@@ -246,7 +246,7 @@
             "role": "Winged Avenger",
             "category": "skirmisher",
             "legendImage": "valk.jpg",
-            "classIcon": "recon.jpg",
+            "classIcon": "skirmisher.jpg",
             "abilities": [
                 {
                     "passive": "VTOL Jets: Use jetpacks to fly. Fuel is limited but refills overtime.",
@@ -306,7 +306,7 @@
             "role": "Amped Modder",
             "category": "controller",
             "legendImage": "rampart.jpg",
-            "classIcon": "defenseImage.jpg",
+            "classIcon": "controller.jpg",
             "abilities": [
                 {
                     "passive": "Modded Loader: Increased magazine capacity and faster reloards when using LMGs and Minigun",
@@ -336,7 +336,7 @@
             "role": "Defensive Conjurer",
             "category": "controller",
             "legendImage": "catalyst.jpg",
-            "classIcon": "defenseImage.jpg",
+            "classIcon": "controller.jpg",
             "abilities": [
                 {
                     "passive": "Barricade: Reinforce doors, strengening them and locking them to enemies. Spaces where doors have been destroyed can also be reinforced",
