@@ -1,0 +1,5 @@
+
+Create Icons and a section on the page. When one of the icons are picked. Only those legends will appear. 
+    Section first   
+    Icons   
+    Functionality. 
