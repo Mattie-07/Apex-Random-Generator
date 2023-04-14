@@ -100,10 +100,11 @@ body {
     height: 5rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 0rem 4rem;
     z-index: 1;
+
 }
 
 .items li {
@@ -156,6 +157,10 @@ body {
     font-size: 3rem;
     margin-top: 6rem;
     margin-left: 73px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 div.legend {
