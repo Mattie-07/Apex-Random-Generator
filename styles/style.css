@@ -10,9 +10,15 @@
 }
 
 body {
+    opacity:0;
+    transition: opacity 2.5s ease-in-out;
     background-color: #Fff;
     /* background-color: #FAF9F6; */
     margin-bottom: 5rem;
+}
+
+body.loaded{
+    opacity:1;
 }
 
 .container {
