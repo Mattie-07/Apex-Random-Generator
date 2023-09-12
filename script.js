@@ -190,3 +190,19 @@ document.addEventListener("DOMContentLoaded", function() {
 //   clicking.pause();
 //   clicking.currentTime = 0;
 // }, false);
+const scrollToTopButton = document.getElementById('scrollToTopButton');
+
+// Add a scroll event listener to show/hide the button
+window.addEventListener('scroll', () => {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollToTopButton.style.display = 'block';
+    } else {
+        scrollToTopButton.style.display = 'none';
+    }
+});
+
+// Add a click event listener to scroll to the top when the button is clicked
+scrollToTopButton.addEventListener('click', () => {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+});
